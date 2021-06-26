@@ -338,3 +338,8 @@ Note that each one of these is a cookie that was granted to Ryan after logging i
 
 ---
 © 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.  
+
+---
+# `Ketan Vithal Patel`
+### `June 28, 2021 -- UofT Cybersecurity - Boot Camp`
+#### `Jai Shri Swaminarayan`
