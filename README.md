@@ -20,7 +20,7 @@ Answer the following questions about the HTTP request and response process.
 1. What type of architecture does the HTTP request and response process occur in?  
     1. **_Client-Server Architecture, which takes part in OSI layer 7 (the application layer)._**  
 2. What are the different parts of an HTTP request? 
-    1. **_The Request Line: is the very first line in an HTTP request. The combination of three parts forms it-_**
+    1. **_`The Request Line:` is the very first line in an HTTP request. The combination of three parts forms it-_**
         1. The HTTP method used
         2. The request URI
         3. The HTTP protocol version
@@ -33,11 +33,29 @@ Answer the following questions about the HTTP request and response process.
                Accept-Encoding: gzip, deflate
                Connection: Keep-Alive
                ````
-    2. **_The Request Header: is an `HTTP header` that can be used in an HTTP request to provide information about the request context, so that the server can tailor the response._**
-    4. **_The Request Body: _**  
+    2. **_`The Request Header:` is an `HTTP header` that can be used in an HTTP request to provide information about the request context, so that the server can tailor the response._**
+        1. Example: from above
+           ````
+           Accept-Language: en-us
+           Accept-Encoding: gzip, deflate
+           Connection: Keep-Alive
+           ````
+    3. **_`The Request Body:` is data sent by the client to your API. A response body is the data your API sends to the client._**
+        1. Example: Response Body (HTML)
+           ````
+           <html>
+               <body>
+               <h1>Hello, World!</h1>
+               </body>
+           </html>
+           ````
 3. Which part of an HTTP request is optional?
+    1. **_`The Request Body` is optional_**
 
 4. What are the three parts of an HTTP response?
+    1. **_Status Line - describing the message_**
+    2. **_Header - containing attributes_**
+    3. **_Body, optional - containing data_**
 
 5. Which number class of status codes represents errors?
 
@@ -354,6 +372,7 @@ Note that each one of these is a cookie that was granted to Ryan after logging i
 © 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.  
 
 ---
-# :bowtie:`Ketan Vithal Patel`:sunglasses:
+:sunglasses: `Ketan Vithal Patel` :sunglasses:
+==============================================
 ### `June 28, 2021 -- UofT Cybersecurity - Boot Camp`
 #### `Jai Shri Swaminarayan`/play trombone
