@@ -17,10 +17,24 @@ Before you work through the questions below, please create a new file and record
 
 Answer the following questions about the HTTP request and response process.
 
-1. What type of architecture does the HTTP request and response process occur in?
-
+1. What type of architecture does the HTTP request and response process occur in?  
+    1. **_Client-Server Architecture, which takes part in OSI layer 7 (the application layer)._**  
 2. What are the different parts of an HTTP request? 
-
+    1. **_The Request Line: is the very first line in an HTTP request. The combination of three parts forms it-_**
+        1. The HTTP method used
+        2. The request URI
+        3. The HTTP protocol version
+            1. Example:   
+               ````
+               GET /hello.html HTTP/1.1
+               User-Agent: Mozilla/4.0 (compatible; MSIE5.01; Windows NT)
+               Host: www.example.com
+               Accept-Language: en-us
+               Accept-Encoding: gzip, deflate
+               Connection: Keep-Alive
+               ````
+    2. **_The Request Header: is an `HTTP header` that can be used in an HTTP request to provide information about the request context, so that the server can tailor the response._**
+    4. **_The Request Body: _**  
 3. Which part of an HTTP request is optional?
 
 4. What are the three parts of an HTTP response?
@@ -340,6 +354,6 @@ Note that each one of these is a cookie that was granted to Ryan after logging i
 © 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.  
 
 ---
-# `Ketan Vithal Patel`
+# :bowtie:`Ketan Vithal Patel`:sunglasses:
 ### `June 28, 2021 -- UofT Cybersecurity - Boot Camp`
-#### `Jai Shri Swaminarayan`
+#### `Jai Shri Swaminarayan`/play trombone
