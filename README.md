@@ -55,11 +55,66 @@ Answer the following questions about the HTTP request and response process.
 4. What are the three parts of an HTTP response?
     1. **_Status Line - describing the message_**
     2. **_Header - containing attributes_**
-    3. **_Body, optional - containing data_**
-
+    3. **_Body, optional - containing data_**  
+        1. An Example of HTTP Response:
+           ````
+           HTTP/1.1 200 OK
+           Date: Mon, 27 Jul 2009 12:28:53 GMT
+           Server: Apache/2.2.14 (Win32)
+           Last-Modified: Wed, 22 Jul 2009 19:15:56 GMT
+           Content-Length: 88
+           Content-Type: text/html
+           Connection: Closed
+           ````
+    
+            ![Three parts of an HTTP message](/Images/httpatomoreillycomsourceoreillyimages96872.png)  
 5. Which number class of status codes represents errors?
+    1. **_400 codes indicate client errors_**  
+        |              Status Code                             |              Description                                           |
+        |`400 Bad Request`                                     | The server could not understand the request due to invalid syntax. |
+        |`401 Unauthorized`                                    | Although the HTTP standard specifies "unauthorized", semantically this response means "unauthenticated". That is, the client must authenticate itself to get the requested response. |
+        3.  `402 Payment Required (:warning: Experimental)`
+        4.  `403 Forbidden`
+        5.  `404 Not Found`
+        6.  `405 Method Not Allowed`
+        7.  `406 Not Acceptable`
+        8.  `407 Proxy Authentication Required`
+        9.  `408 Request Timeout`
+        10.  `409 Conflict`
+        11.  `410 Gone`
+        12.  `411 Length Required`
+        13.  `412 Precondition Failed`
+        14.  `413 Payload Too Large`
+        15.  `414 URI Too Long`
+        16.  `415 Unsupported Media Type`
+        17.  `416 Range Not Satisfiable`
+        18.  `417 Expectation Failed`
+        19.  `418 I'm a teapot`
+        20.  `421 Misdirected Request`
+        21.  `422 Unprocessable Entity (WebDAV)`
+        22.  `423 Locked (WebDAV)`
+        23.  `424 Failed Dependency (WebDAV)`
+        24.  `425 Too Early (:warning: Experimental)`
+        25.  `426 Upgrade Required`
+        26.  `428 Precondition Required`
+        27.  `429 Too Many Requests`
+        28.  `431 Request Header Fields Too Large`
+        29.  `451 Unavailable For Legal Reasons`  
+    3. **_500 codes indicate server errors_**
+        1.  `500 Internal Server Error`
+        2.  `501 Not Implemented`
+        3.  `502 Bad Gateway`
+        4.  `503 Service Unavailable`
+        5.  `504 Gateway Timeout`
+        6.  `505 HTTP Version Not Supported`
+        7.  `506 Variant Also Negotiates`
+        8.  `507 Insufficient Storage (WebDAV)`
+        9.  `508 Loop Detected (WebDAV)`
+        10.  `510 Not Extended`
+        11.  `511 Network Authentication Required`  
 
 6. What are the two most common request methods that a security professional will encounter?
+    1. **_GET and POST. GET requests ask for data from a server to retrieve data. POST requests send data to a specified resource._** 
 
 7. Which type of HTTP request method is used for sending data?
 
