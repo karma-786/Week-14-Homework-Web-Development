@@ -41,13 +41,9 @@ Answer the following questions about the HTTP request and response process.
            Connection: Keep-Alive
            ````
     3. **_`The Request Body:` is data sent by the client to your API. A response body is the data your API sends to the client._**
-        1. Example: Response Body (HTML)
+        1. Example: Request Body (HTML)
            ````
-           <html>
-               <body>
-               <h1>Hello, World!</h1>
-               </body>
-           </html>
+           `Hello World!`
            ````
 3. Which part of an HTTP request is optional?
     1. **_`The Request Body` is optional_**
@@ -69,58 +65,30 @@ Answer the following questions about the HTTP request and response process.
     
             ![Three parts of an HTTP message](/Images/httpatomoreillycomsourceoreillyimages96872.png)  
 5. Which number class of status codes represents errors?
-    1. **_400 codes indicate client errors_**  
-        |              Status Code                             |              Description                                           |
-        |`400 Bad Request`                                     | The server could not understand the request due to invalid syntax. |
-        |`401 Unauthorized`                                    | Although the HTTP standard specifies "unauthorized", semantically this response means "unauthenticated". That is, the client must authenticate itself to get the requested response. |
-        3.  `402 Payment Required (:warning: Experimental)`
-        4.  `403 Forbidden`
-        5.  `404 Not Found`
-        6.  `405 Method Not Allowed`
-        7.  `406 Not Acceptable`
-        8.  `407 Proxy Authentication Required`
-        9.  `408 Request Timeout`
-        10.  `409 Conflict`
-        11.  `410 Gone`
-        12.  `411 Length Required`
-        13.  `412 Precondition Failed`
-        14.  `413 Payload Too Large`
-        15.  `414 URI Too Long`
-        16.  `415 Unsupported Media Type`
-        17.  `416 Range Not Satisfiable`
-        18.  `417 Expectation Failed`
-        19.  `418 I'm a teapot`
-        20.  `421 Misdirected Request`
-        21.  `422 Unprocessable Entity (WebDAV)`
-        22.  `423 Locked (WebDAV)`
-        23.  `424 Failed Dependency (WebDAV)`
-        24.  `425 Too Early (:warning: Experimental)`
-        25.  `426 Upgrade Required`
-        26.  `428 Precondition Required`
-        27.  `429 Too Many Requests`
-        28.  `431 Request Header Fields Too Large`
-        29.  `451 Unavailable For Legal Reasons`  
-    3. **_500 codes indicate server errors_**
-        1.  `500 Internal Server Error`
-        2.  `501 Not Implemented`
-        3.  `502 Bad Gateway`
-        4.  `503 Service Unavailable`
-        5.  `504 Gateway Timeout`
-        6.  `505 HTTP Version Not Supported`
-        7.  `506 Variant Also Negotiates`
-        8.  `507 Insufficient Storage (WebDAV)`
-        9.  `508 Loop Detected (WebDAV)`
-        10.  `510 Not Extended`
-        11.  `511 Network Authentication Required`  
+    1. **_400 codes indicate client errors_**  -- [400 Client Error Codes](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes#4xx_client_errors)
+    2. **_500 codes indicate server errors_**  -- [500 Server Error Codes](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes#5xx_server_errors)  
 
-6. What are the two most common request methods that a security professional will encounter?
-    1. **_GET and POST. GET requests ask for data from a server to retrieve data. POST requests send data to a specified resource._** 
+6. What are the two most common request `methods` that a security professional will encounter?
+    1. **_`GET` and `POST`._**  
+        1. **_`GET` method requests ask for data from a server to retrieve data._**
+        2. **_`POST` method requests send data to a specified resource._**  
+    2. There are several other that are used:
+        1. `HEAD`
+        2. `PUT`
+        3. `DELETE`
+        4. `CONNECT`
+        5. `OPTIONS`
+        6. `TRACE`
+        7. `PATCH`
 
 7. Which type of HTTP request method is used for sending data?
+    1. **_`POST` is used to send data to a server to create/update a resource._**  
 
 8. Which part of an HTTP request contains the data being sent to the server?
+    1. **_The Request Body_** `POST` request sends data to the server.  
 
-9. In which part of an HTTP response does the browser receive the web code to generate and style a web page?
+9. In which part of an HTTP response does the browser receive the web code to generate and style a web page?  
+    1. **_The Response Body_** Data received along with the response.
 
 #### Using curl
 
