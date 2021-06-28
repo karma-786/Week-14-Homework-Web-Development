@@ -219,26 +219,48 @@ X-XSS-Protection: 1; mode=block
 Answer the following questions about monoliths and microservices:
 
 26. What are the individual components of microservices called?
+    1. There are 8 core components of microservices, they are:   
+        1. **_Clients_** 
+        2. **_Identity Providers_** 
+        3. **_API Gateway_** 
+        4. **_Messaging Formats_** 
+        5. **_Databases_** 
+        6. **_Static Content_** 
+        7. **_Management_** 
+        8. **_Service Discovery_**
+        [OptiSol Business Solutions](https://www.optisolbusiness.com/insight/8-core-components-of-microservice-architecture "8 Core Components of Microservice Architecture")
 
 27. What is a service that writes to a database and communicates to other services?
+    1. **__** 
 
 28. What type of underlying technology allows for microservices to become scalable and have redundancy?
+    1. **__** 
 
 #### Deploying and Testing a Container Set
 
 Answer the following questions about multi-container deployment:
 
 29. What tool can be used to deploy multiple containers at once?
+    1. **__** 
+
 
 30. What kind of file format is required for us to deploy a container set?
+    1. **__** 
+
 
 #### Databases
 
 31. Which type of SQL query would we use to see all of the information within a table called `customers`?
+    1. **__** 
+
 
 32. Which type of SQL query would we use to enter new data into a table? (You don't need a full query, just the first part of the statement.)
+    1. **__** 
+
 
 33. Why would we never run `DELETE FROM <table-name>;` by itself?
+    1. **__** 
+
 
 ---
 
@@ -434,6 +456,7 @@ Note that each one of these is a cookie that was granted to Ryan after logging i
 - [PortSwigger](https://portswigger.net/web-security/request-smuggling "HTTP request smuggling")
 - [Netsparker](https://www.netsparker.com/whitepaper-http-security-headers/ "HTTP Security Headers and How They Work")
 - [The SSL Store](https://www.thesslstore.com/blog/http-security-headers/ "HTTP Security Headers: 5 Headers You Must Implement on Your Site")
+- [OptiSol Business Solutions](https://www.optisolbusiness.com/insight/8-core-components-of-microservice-architecture "8 Core Components of Microservice Architecture")
 - []( "")
 - []( "")
 - []( "")
