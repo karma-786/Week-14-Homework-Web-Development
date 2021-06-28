@@ -387,9 +387,13 @@ Note that each one of these is a cookie that was granted to Ryan after logging i
 
 ---
 
-### Submission Guidelines
+### References
 
-* Save the file where you documented your solutions and submit it as your homework deliverable. 
+[Tools QA](https://www.toolsqa.com/client-server/http-request/ "Tools QA")
+[MDN Web Docs](https://developer.mozilla.org/en-US/search?q=HTTP "HTTP")
+[List of HTTP status codes](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes# "List of HTTP status codes")
+[Test HTTP methods](https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/02-Configuration_and_Deployment_Management_Testing/06-Test_HTTP_Methods "HTTP Methods")
+[HTTP Request methods](https://www.w3schools.com/tags/ref_httpmethods.asp "HTTP Request Methods")
 
 ---
 © 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.  
@@ -398,4 +402,4 @@ Note that each one of these is a cookie that was granted to Ryan after logging i
 :sunglasses: `Ketan Vithal Patel` :sunglasses:
 ==============================================
 ### `June 28, 2021 -- UofT Cybersecurity - Boot Camp`
-#### `Jai Shri Swaminarayan`/play trombone
+#### :rose::rose:`Jai Shri Swaminarayan`:rose::rose:
