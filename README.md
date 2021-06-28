@@ -95,14 +95,27 @@ Answer the following questions about the HTTP request and response process.
 Answer the following questions about `curl`:
 
 10. What are the advantages of using `curl` over the browser?
+    1. **_`curl` is a free command line tool with many advantages_**
+        1. authentication
+        2. HTTP post
+        3. SSL connections
+        4. proxy support
+        5. FTP uploads
+        6. Saving URL to file
+        7. Downloading  
 
 11. Which `curl` option is used to change the request method?
+    1. The options can be **_using the `-X` or `--request` command-line options_**
 
 12. Which `curl` option is used to set request headers?
+    1. **_`-H`, `--header`_**  
 
 13. Which `curl` option is used to view the response header?
+    1. **_`-i`, `--include`_**
 
 14. Which request method might an attacker use to figure out which HTTP requests an HTTP server will accept?
+    1. **_`GET` request because attacker could requests data from a server to figure out which HTTP requests that an HTTP server server will accept._**
+    2. **_`Options` is another request method that the attacker might figure out since it lists out the communication options for target resource._**  
 
 #### Sessions and Cookies
 
@@ -116,7 +129,8 @@ Answer the following questions about sessions and cookies:
     HTTP/1.1 200 OK
     Content-type: text/html
     Set-Cookie: cart=Bob
-    ```
+    ```  
+    1. **_The `set-cookie` sends the `cookie` to the client, which the cookie sent in `cart=Bob`._**
 
 16. Which request header will continue the client's session?
 
@@ -124,7 +138,8 @@ Answer the following questions about sessions and cookies:
     GET /cart HTTP/1.1
     Host: www.example.org
     Cookie: cart=Bob
-    ```
+    ```  
+    1. **_The `cookie` will continue the client's session._**
 
 #### Example HTTP Requests and Responses
 
@@ -146,12 +161,20 @@ username=Barbara&password=password
 ```
 
 17. What is the request method?
+    1. **_`POST`_**  
 
 18. Which header expresses the client's preference for an encrypted response?
+    1. **_`Upgrade-Insecure-Requests: 1`_**  
 
 19. Does the request have a user session associated with it?
+    1. **_No the Session is not restablished yet_**
 
 20. What kind of data is being sent from this request body?
+    1. Login credential was sent.
+    ```
+    username=Barbara
+    password=password
+    ```  
 
 **HTTP Response**
 
@@ -173,14 +196,23 @@ X-XSS-Protection: 1; mode=block
 ```
 
 21. What is the response status code?
+    1. **_`200`_**
 
 22. What web server is handling this HTTP response?
+    1. **_`Apache webserver`_**
 
 23. Does this response have a user session associated to it?
+    1. **_Yes, `Set-Cookie: SessionID=5`_**
 
 24. What kind of content is likely to be in the [page content] response body?
+    1. **_The code to the website, as seen in `Content-Type: text/html_` (Text / HTML - Detail of the page configuration)**
 
 25. If your class covered security headers, what security request headers have been included?
+    1. **_HTTP Strict Transport Security (HSTS) - `Strict-Transport-Security:` max-age=31536000; includeSubDomains_**
+    2. **_X-Content-Type-Options HTTP - `X-Content-Type:` NoSniff_**  
+    3. **_X-Frame-Options HTTP - `X-Frame-Options:` DENY_**  
+    4. **_Cross Site Scripting Protection (X-XSS) - `X-XSS-Protection:` 1; mode=block_**
+
 
 #### Monoliths and Microservices
 
@@ -389,11 +421,29 @@ Note that each one of these is a cookie that was granted to Ryan after logging i
 
 ### References
 
-[Tools QA](https://www.toolsqa.com/client-server/http-request/ "Tools QA")
-[MDN Web Docs](https://developer.mozilla.org/en-US/search?q=HTTP "HTTP")
-[List of HTTP status codes](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes# "List of HTTP status codes")
-[Test HTTP methods](https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/02-Configuration_and_Deployment_Management_Testing/06-Test_HTTP_Methods "HTTP Methods")
-[HTTP Request methods](https://www.w3schools.com/tags/ref_httpmethods.asp "HTTP Request Methods")
+- [Tools QA](https://www.toolsqa.com/client-server/http-request/ "Tools QA")  
+- [MDN Web Docs](https://developer.mozilla.org/en-US/search?q=HTTP "HTTP")  
+- [Wikipedia, the free encyclopedia](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes# "List of HTTP status codes")  
+- [OWASP, Open Web Application Security Project](https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/02-Configuration_and_Deployment_Management_Testing/06-Test_HTTP_Methods "Test HTTP Methods")  
+- [W3Schools](https://www.w3schools.com/tags/ref_httpmethods.asp "HTTP Request Methods")  
+- [ENVATO TUTS+](https://code.tutsplus.com/tutorials/http-headers-for-dummies--net-8039 "HTTP Headers for Dummies")  
+- [freeCodeCamp](https://www.freecodecamp.org/news/http-and-everything-you-need-to-know-about-it/ "An introduction to HTTP: everything you need to know")  
+- [Pair](https://blog.pair.com/2018/01/26/curl-description-basic-use-cases/ "What is curl?")  
+- [Everything curl](https://everything.curl.dev/http/requests "Modify the HTTP request")
+- [curl(1) - Linux manual page](https://man7.org/linux/man-pages/man1/curl.1.html "Curl Manual")
+- [PortSwigger](https://portswigger.net/web-security/request-smuggling "HTTP request smuggling")
+- [Netsparker](https://www.netsparker.com/whitepaper-http-security-headers/ "HTTP Security Headers and How They Work")
+- [The SSL Store](https://www.thesslstore.com/blog/http-security-headers/ "HTTP Security Headers: 5 Headers You Must Implement on Your Site")
+- []( "")
+- []( "")
+- []( "")
+- []( "")
+- []( "")
+- []( "")
+- []( "")
+- 
+
+
 
 ---
 © 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.  
