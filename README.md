@@ -18,13 +18,16 @@ Before you work through the questions below, please create a new file and record
 Answer the following questions about the HTTP request and response process.
 
 1. What type of architecture does the HTTP request and response process occur in?  
-    1. **_Client-Server Architecture, which takes part in OSI layer 7 (the application layer)._**  
+
+    * **_Client-Server Architecture, which takes part in OSI layer 7 (the application layer)._**  
+    
 2. What are the different parts of an HTTP request? 
-    1. **_`The Request Line:` is the very first line in an HTTP request. The combination of three parts forms it-_**
-        1. The HTTP method used
-        2. The request URI
-        3. The HTTP protocol version
-            1. Example:   
+    
+    * **_`The Request Line:` is the very first line in an HTTP request. The combination of three parts forms it-_**
+        * The HTTP method used
+        * The request URI
+        * The HTTP protocol version
+            * Example:   
                ````
                GET /hello.html HTTP/1.1
                User-Agent: Mozilla/4.0 (compatible; MSIE5.01; Windows NT)
@@ -33,26 +36,31 @@ Answer the following questions about the HTTP request and response process.
                Accept-Encoding: gzip, deflate
                Connection: Keep-Alive
                ````
-    2. **_`The Request Header:` is an `HTTP header` that can be used in an HTTP request to provide information about the request context, so that the server can tailor the response._**
-        1. Example: from above
+    
+    * **_`The Request Header:` is an `HTTP header` that can be used in an HTTP request to provide information about the request context, so that the server can tailor the response._**
+        * Example: from above
            ````
            Accept-Language: en-us
            Accept-Encoding: gzip, deflate
            Connection: Keep-Alive
            ````
-    3. **_`The Request Body:` is data sent by the client to your API. A response body is the data your API sends to the client._**
-        1. Example: Request Body (HTML)
+    
+    * **_`The Request Body:` is data sent by the client to your API. A response body is the data your API sends to the client._**
+        * Example: Request Body (HTML)
            ````
            `Hello World!`
-           ````
+           ````  
+           
 3. Which part of an HTTP request is optional?
-    1. **_`The Request Body` is optional_**
+    
+    * **_`The Request Body` is optional_**  
 
 4. What are the three parts of an HTTP response?
-    1. **_Status Line - describing the message_**
-    2. **_Header - containing attributes_**
-    3. **_Body, optional - containing data_**  
-        1. An Example of HTTP Response:
+    
+    * **_Status Line - describing the message_**  
+    * **_Header - containing attributes_**  
+    * **_Body, optional - containing data_**    
+        * An Example of HTTP Response:  
            ````
            HTTP/1.1 200 OK
            Date: Mon, 27 Jul 2009 12:28:53 GMT
@@ -61,61 +69,74 @@ Answer the following questions about the HTTP request and response process.
            Content-Length: 88
            Content-Type: text/html
            Connection: Closed
-           ````
+           ````  
     
-            ![Three parts of an HTTP message](/Images/httpatomoreillycomsourceoreillyimages96872.png)  
-5. Which number class of status codes represents errors?
-    1. **_400 codes indicate client errors_**  -- [400 Client Error Codes](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes#4xx_client_errors)
-    2. **_500 codes indicate server errors_**  -- [500 Server Error Codes](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes#5xx_server_errors)  
+          ![Three parts of an HTTP message](/Images/httpatomoreillycomsourceoreillyimages96872.png)  
+          
+5. Which number class of status codes represents errors?  
+    
+    * **_400 codes indicate client errors_**  -- [400 Client Error Codes](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes#4xx_client_errors)
+    
+    * **_500 codes indicate server errors_**  -- [500 Server Error Codes](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes#5xx_server_errors)  
 
-6. What are the two most common request `methods` that a security professional will encounter?
-    1. **_`GET` and `POST`._**  
-        1. **_`GET` method requests ask for data from a server to retrieve data._**
-        2. **_`POST` method requests send data to a specified resource._**  
-    2. There are several other that are used:
-        1. `HEAD`
-        2. `PUT`
-        3. `DELETE`
-        4. `CONNECT`
-        5. `OPTIONS`
-        6. `TRACE`
-        7. `PATCH`
+6. What are the two most common request `methods` that a security professional will encounter?  
+    
+    * **_`GET` and `POST`._**  
+        * **_`GET` method requests ask for data from a server to retrieve data._**
+        * **_`POST` method requests send data to a specified resource._**  
+    
+    * There are several other that are used:
+        * `HEAD`
+        * `PUT`
+        * `DELETE`
+        * `CONNECT`
+        * `OPTIONS`
+        * `TRACE`
+        * `PATCH`  
 
-7. Which type of HTTP request method is used for sending data?
-    1. **_`POST` is used to send data to a server to create/update a resource._**  
+7. Which type of HTTP request method is used for sending data?  
+    
+    * **_`POST` is used to send data to a server to create/update a resource._**  
 
-8. Which part of an HTTP request contains the data being sent to the server?
-    1. **_The Request Body_** `POST` request sends data to the server.  
+8. Which part of an HTTP request contains the data being sent to the server?  
+    
+    * **_The Request Body_** `POST` request sends data to the server.  
 
 9. In which part of an HTTP response does the browser receive the web code to generate and style a web page?  
-    1. **_The Response Body_** Data received along with the response.
+    
+    * **_The Response Body_** Data received along with the response.
 
 #### Using curl
 
 Answer the following questions about `curl`:
 
 10. What are the advantages of using `curl` over the browser?
-    1. **_`curl` is a free command line tool with many advantages_**
-        1. authentication
-        2. HTTP post
-        3. SSL connections
-        4. proxy support
-        5. FTP uploads
-        6. Saving URL to file
-        7. Downloading  
+    
+    * **_`curl` is a free command line tool with many advantages_**
+        * authentication
+        * HTTP post
+        * SSL connections
+        * proxy support
+        * FTP uploads
+        * Saving URL to file
+        * Downloading  
 
-11. Which `curl` option is used to change the request method?
-    1. The options can be **_using the `-X` or `--request` command-line options_**
+11. Which `curl` option is used to change the request method?  
+    
+    * The options can be **_using the `-X` or `--request` command-line options_**
 
-12. Which `curl` option is used to set request headers?
-    1. **_`-H`, `--header`_**  
+12. Which `curl` option is used to set request headers?  
+    
+    * **_`-H`, `--header`_**  
 
-13. Which `curl` option is used to view the response header?
-    1. **_`-i`, `--include`_**
+13. Which `curl` option is used to view the response header?  
+    
+    * **_`-i`, `--include`_**
 
-14. Which request method might an attacker use to figure out which HTTP requests an HTTP server will accept?
-    1. **_`GET` request because attacker could requests data from a server to figure out which HTTP requests that an HTTP server server will accept._**
-    2. **_`Options` is another request method that the attacker might figure out since it lists out the communication options for target resource._**  
+14. Which request method might an attacker use to figure out which HTTP requests an HTTP server will accept?  
+    
+    * **_`GET` request because attacker could requests data from a server to figure out which HTTP requests that an HTTP server server will accept._**
+    * **_`Options` is another request method that the attacker might figure out since it lists out the communication options for target resource._**  
 
 #### Sessions and Cookies
 
@@ -123,14 +144,15 @@ Recall that HTTP servers need to be able to recognize clients from one another. 
 
 Answer the following questions about sessions and cookies:
 
-15. Which response header sends a cookie to the client?
+15. Which response header sends a cookie to the client?  
 
     ```HTTP
     HTTP/1.1 200 OK
     Content-type: text/html
     Set-Cookie: cart=Bob
     ```  
-    1. **_The `set-cookie` sends the `cookie` to the client, which the cookie sent in `cart=Bob`._**
+    
+    * **_The `set-cookie` sends the `cookie` to the client, which the cookie sent in `cart=Bob`._**
 
 16. Which request header will continue the client's session?
 
@@ -139,7 +161,8 @@ Answer the following questions about sessions and cookies:
     Host: www.example.org
     Cookie: cart=Bob
     ```  
-    1. **_The `cookie` will continue the client's session._**
+    
+    * **_The `cookie` will continue the client's session._**  
 
 #### Example HTTP Requests and Responses
 
@@ -161,16 +184,20 @@ username=Barbara&password=password
 ```
 
 17. What is the request method?
-    1. **_`POST`_**  
+    
+    * **_`POST`_**  
 
-18. Which header expresses the client's preference for an encrypted response?
-    1. **_`Upgrade-Insecure-Requests: 1`_**  
+18. Which header expresses the client's preference for an encrypted response?  
+    
+    * **_`Upgrade-Insecure-Requests: 1`_**  
 
-19. Does the request have a user session associated with it?
-    1. **_No the Session is not restablished yet_**
+19. Does the request have a user session associated with it?  
+    
+    * **_No the Session is not restablished yet_**
 
-20. What kind of data is being sent from this request body?
-    1. Login credential was sent.
+20. What kind of data is being sent from this request body?  
+    
+    * Login credential was sent.
     ```
     username=Barbara
     password=password
@@ -195,32 +222,38 @@ X-XSS-Protection: 1; mode=block
 [page content]
 ```
 
-21. What is the response status code?
-    1. **_`200`_**
+21. What is the response status code?  
+    
+    * **_`200`_**
 
-22. What web server is handling this HTTP response?
-    1. **_`Apache webserver`_**
+22. What web server is handling this HTTP response?  
+    
+    * **_`Apache webserver`_**
 
-23. Does this response have a user session associated to it?
-    1. **_Yes, `Set-Cookie: SessionID=5`_**
+23. Does this response have a user session associated to it?  
+    
+    * **_Yes, `Set-Cookie: SessionID=5`_**
 
-24. What kind of content is likely to be in the [page content] response body?
-    1. **_The code to the website, as seen in `Content-Type: text/html_` (Text / HTML - Detail of the page configuration)**
+24. What kind of content is likely to be in the [page content] response body?  
+    
+    * **_The code to the website, as seen in `Content-Type: text/html_` (Text / HTML - Detail of the page configuration)**
 
-25. If your class covered security headers, what security request headers have been included?
-    1. **_HTTP Strict Transport Security (HSTS) - `Strict-Transport-Security:` max-age=31536000; includeSubDomains_**
-    2. **_X-Content-Type-Options HTTP - `X-Content-Type:` NoSniff_**  
-    3. **_X-Frame-Options HTTP - `X-Frame-Options:` DENY_**  
-    4. **_Cross Site Scripting Protection (X-XSS) - `X-XSS-Protection:` 1; mode=block_**
+25. If your class covered security headers, what security request headers have been included?  
+    
+    * **_HTTP Strict Transport Security (HSTS) - `Strict-Transport-Security:` max-age=31536000; includeSubDomains_**
+    * **_X-Content-Type-Options HTTP - `X-Content-Type:` NoSniff_**  
+    * **_X-Frame-Options HTTP - `X-Frame-Options:` DENY_**  
+    * **_Cross Site Scripting Protection (X-XSS) - `X-XSS-Protection:` 1; mode=block_**
 
 
 #### Monoliths and Microservices
 
 Answer the following questions about monoliths and microservices:
 
-26. What are the individual components of microservices called?
-    1. There are 8 core components of microservices, they are called **_`Services`_**:   
-        1. **_Clients_** 
+26. What are the individual components of microservices called?  
+    
+    * There are 8 core components of microservices, they are called **_`Services`_**:   
+        1 **_Clients_** 
         2. **_Identity Providers_** 
         3. **_API Gateway_** 
         4. **_Messaging Formats_** 
@@ -228,40 +261,47 @@ Answer the following questions about monoliths and microservices:
         6. **_Static Content_** 
         7. **_Management_** 
         8. **_Service Discovery_**
-        ![OptiSol Business Solutions](/Images/Microservice-architecture-766x370.png "8 Core Components of Microservice Architecture")
+        ![OptiSol Business Solutions](/Images/Microservice-architecture-766x370.png "8 Core Components of Microservice Architecture")  
 
-27. What is a service that writes to a database and communicates to other services?
-    1. **_`API`: Application Programming Interface_** 
+27. What is a service that writes to a database and communicates to other services?  
+    
+    * **_`API`: Application Programming Interface_** 
 
-28. What type of underlying technology allows for microservices to become scalable and have redundancy?
-    1. **_Cointainers allow microservices to be scalable and redundant, along with Load Balancer_** 
+28. What type of underlying technology allows for microservices to become scalable and have redundancy?  
+    
+    * **_Cointainers allow microservices to be scalable and redundant, along with Load Balancer_** 
 
 #### Deploying and Testing a Container Set
 
 Answer the following questions about multi-container deployment:
 
-29. What tool can be used to deploy multiple containers at once?
-    1. **_`Docker Compose` is a tool to deploy multiple containers_**  
+29. What tool can be used to deploy multiple containers at once?  
+    
+    * **_`Docker Compose` is a tool to deploy multiple containers_**  
         `docker-compose up` to bring up the multiple containers.
         `docker-compose down` to bring down the multiple containers.
 
-30. What kind of file format is required for us to deploy a container set?
-    1. **_`YAML` file_**  
+30. What kind of file format is required for us to deploy a container set?  
+    
+    * **_`YAML` file_**  
 
 #### Databases
 
-31. Which type of SQL query would we use to see all of the information within a table called `customers`?
-    1. **_SELECT statements_** 
-        Example:
-        `SELECT * FROM Customers WHERE Last_Name='Smith';`  
+31. Which type of SQL query would we use to see all of the information within a table called `customers`?  
+    
+    * **_SELECT statements_** 
+        * Example:
+          `SELECT * FROM Customers WHERE Last_Name='Smith';`  
 
-32. Which type of SQL query would we use to enter new data into a table? (You don't need a full query, just the first part of the statement.)
-    1. **_INSERT INTO_**
-        Example:
-        `INSERT INTO Customers (field1, field 2, ...) VALUES ('a', 'b', ...);`  
+32. Which type of SQL query would we use to enter new data into a table? (You don't need a full query, just the first part of the statement.)  
+    
+    * **_INSERT INTO_**
+        * Example:
+          `INSERT INTO Customers (field1, field 2, ...) VALUES ('a', 'b', ...);`  
 
-33. Why would we never run `DELETE FROM <table-name>;` by itself?
-    1. **_It deletes the entire table since it does not have the `where` clause._**  
+33. Why would we never run `DELETE FROM <table-name>;` by itself?  
+    
+    * **_It deletes the entire table since it does not have the `where` clause._**  
 
 ---
 
