@@ -48,7 +48,7 @@ Answer the following questions about the HTTP request and response process.
     * **_`The Request Body:` is data sent by the client to your API. A response body is the data your API sends to the client._**
         * Example: Request Body (HTML)
            ````
-           `Hello World!`
+           Hello World!
            ````  
            
 3. Which part of an HTTP request is optional?
