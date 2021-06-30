@@ -418,8 +418,10 @@ Create two new users: Amanda and Ryan.
 
     - Password: `password`
     - Confirm Password: Check the box to confirm use of weak password.
-    - Role: `Administrator`
-   ![User Amanda Created]()
+    - Role: `Administrator`  
+  
+  ![User Amanda Created](/Images/create%20the%20new%20user%20named%20Amanda.PNG)  
+
 5. Create another user named Ryan.
 
     - Username: `Ryan`
@@ -429,7 +431,9 @@ Create two new users: Amanda and Ryan.
 
     - Password: `123456`
     - Confirm Password: Check the box to confirm use of weak password.
-    - Role: `Editor`
+    - Role: `Editor`  
+
+   ![User Ryan Created](/Images/create%20the%20new%20user%20named%20Ryan.PNG)
 
 7. Log out and log in with the following credentials:
 
@@ -442,9 +446,15 @@ For these "baselining" steps, you'll want to log into two different types of acc
 
 1. Using your browser, log into your WordPress site as your sysadmin account and navigate to `localhost:8080/wp-admin/users.php`, where we previously created the user Ryan. Examine this page briefly. Log out.
 
+   ![All Users under sysadmin - log in](/Images/All%20users.PNG)
+
 2. Using your browser, log into your Ryan account and attempt to navigate to `localhost:8080/wp-admin/index.php`. Note the wording on your Dashboard.
 
+   ![Ryan's Page](/Images/Ryan%20indexdotphp.PNG)
+
 3. Attempt to navigate to `localhost:8080/wp-admin/users.php`. Note what you see now.
+
+   ![Users screen under Ryan's log in](/Images/With%20Ryan%20logged%20in%20-%20navigating%20to%20localhostcolon8080-wp-admin-usersdotphp.PNG)
 
 Log out in the browser.
 
@@ -454,6 +464,8 @@ Navigate to `~/Documents` in a terminal to save your cookies.
 
 1. Construct a `curl` request that enters two forms: `"log={username}"` and `"pwd={password}"` and goes to `http://localhost:8080/wp-login.php`. Enter Ryan's credentials where there are placeholders.
 
+   - curl -L -D cookie2.txt -F "log=Ryan" -F "pwd=12345//localhost:8080/wp-login.php    
+    
     - **Question:** Did you see any obvious confirmation of a login? (Y/N)
 
 2. Construct the same `curl` request, but this time add the option and path to save your cookie: `--cookie-jar ./ryancookies.txt`. This option tells `curl` to save the cookies to the `ryancookies.txt` text file.
