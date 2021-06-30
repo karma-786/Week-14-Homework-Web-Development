@@ -419,7 +419,7 @@ Create two new users: Amanda and Ryan.
     - Password: `password`
     - Confirm Password: Check the box to confirm use of weak password.
     - Role: `Administrator`
-
+   ![User Amanda Created]()
 5. Create another user named Ryan.
 
     - Username: `Ryan`
