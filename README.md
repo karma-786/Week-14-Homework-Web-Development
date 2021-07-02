@@ -464,14 +464,20 @@ Navigate to `~/Documents` in a terminal to save your cookies.
 
 1. Construct a `curl` request that enters two forms: `"log={username}"` and `"pwd={password}"` and goes to `http://localhost:8080/wp-login.php`. Enter Ryan's credentials where there are placeholders.
 
-   - curl -L -D cookie2.txt -F "log=Ryan" -F "pwd=12345//localhost:8080/wp-login.php    
-    [No Confirmation](/curl%20for%20Ryan%20credentials.txt)  
+   - curl -L -D cookie2.txt -d "log=Ryan&pwd=12345&testcookie=1&rememberme=forever" http://localhost:8080/wp-login.php  
+    ![Cookie2](/Images/cookie2dottxt.PNG)  
     
    - **Question:** Did you see any obvious confirmation of a login? (Y/N) None on the Webpage - however there was code confirmation in the terminal.
+      - **`YES`**  
+      https://github.com/karma-786/Week-14-Homework-Web-Development/blob/main/curl%20for%20Ryan%20credentials.txt
 
-2. Construct the same `curl` request, but this time add the option and path to save your cookie: `--cookie-jar ./ryancookies.txt`. This option tells `curl` to save the cookies to the `ryancookies.txt` text file.
+2. Construct the same `curl` request, but this time add the option and path to save your cookie: `--cookie-jar ./ryancookies.txt`. This option tells `curl` to save the cookies to the `ryancookies.txt` text file.  
+
+   - curl -L -c cookie2.txt --cookie-jar ~/Documents/wp/ryancookies.txt http://localhost:8080/wp-login.php
 
 3. Read the contents of the `ryancookies.txt` file.
+   
+   ![ryancookies](/Images/Ryancookies.PNG)
 
    - **Question:** How many items exist in this file?
 
@@ -481,11 +487,16 @@ Note that each one of these is a cookie that was granted to Ryan after logging i
 
 1. Craft a new `curl` command that now uses the `--cookie` option, followed by the path to your cookies file. For the URL, use `http://localhost:8080/wp-admin/index.php`.
 
-   - **Question:** Is it obvious that we can access the Dashboard? (Y/N)
+   - curl --cookie cookie2.txt --cookie-jar /Documents/wp/ryabcookies.txt http://localhost:8080/wp-admin/index.php
+
+- **Question:** Is it obvious that we can access the Dashboard? (Y/N)
+   - **`No`**  
 
 2. Press the up arrow on your keyboard to run the same command, but this time, pipe `| grep Dashboard` to the end of your command to return all instances of the word `Dashboard` on the page.
 
-    - **Question:**  Look through the output where `Dashboard` is highlighted. Does any of the wording on this page seem familiar? (Y/N) If so, you should be successfully logged in to your Editor's dashboard.
+   - curl --cookie cookie2.txt --cookie-jar /Documents/wp/ryabcookies.txt http://localhost:8080/wp-admin/index.php | grep Dashboard
+
+- **Question:**  Look through the output where `Dashboard` is highlighted. Does any of the wording on this page seem familiar? (Y/N) If so, you should be successfully logged in to your Editor's dashboard.
 
 #### Step 5: Test the Users.php Page
 
