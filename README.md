@@ -465,7 +465,7 @@ Navigate to `~/Documents` in a terminal to save your cookies.
 1. Construct a `curl` request that enters two forms: `"log={username}"` and `"pwd={password}"` and goes to `http://localhost:8080/wp-login.php`. Enter Ryan's credentials where there are placeholders.
 
    - curl -L -D cookie2.txt -d "log=Ryan&pwd=12345&testcookie=1&rememberme=forever" http://localhost:8080/wp-login.php  
-    ![Cookie2]()  
+    ![Cookie2](/Images/cookie2dottxt.PNG)  
     
    - **Question:** Did you see any obvious confirmation of a login? (Y/N) None on the Webpage - however there was code confirmation in the terminal.
       - **`YES`**  
