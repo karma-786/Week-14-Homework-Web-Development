@@ -338,3 +338,14 @@ Note that each one of these is a cookie that was granted to Ryan after logging i
 
 ---
 © 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.  
+---
+
+## Week 14 Homework Solution: Web Development
+
+Refer to the following solution files for the homework worksheets: 
+
+* [Week 14 Homework Solution: Web Development](https://github.com/karma-786/Week-14-Homework-Web-Development/blob/main/Week%2014%20Homework%20Web%20Development.md)  
+
+---
+© 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+
