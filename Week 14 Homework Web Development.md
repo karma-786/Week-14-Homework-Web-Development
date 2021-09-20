@@ -541,5 +541,5 @@ Note that each one of these is a cookie that was granted to Ryan after logging i
 ---
 :sunglasses: `Ketan Vithal Patel` :sunglasses:
 ==============================================
-### `June 28, 2021 -- UofT Cybersecurity - Boot Camp`
+### `Monday, June 28, 2021 -- UofT Cybersecurity - Boot Camp`
 #### :rose::rose:`Jai Shri Swaminarayan`:rose::rose:
